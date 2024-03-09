@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
         let deferredPrompt;
         let installPromptShown = false;
 
@@ -38,3 +39,4 @@
                 });
             }
         }
+});
