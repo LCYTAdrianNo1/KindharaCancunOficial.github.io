@@ -1,9 +1,10 @@
 {
   "name": "Kindhara Cancun Fisioterapia",
   "short_name": "Kindhara Cancun",
-  "description": "Pagina de Fisioterapia Kindhara",
-  "start_url": "https://lcytadrianno1.github.io/KindharaCancunOficial.github.io/#",
-  "display": "standalone",
+  "description": "Pagina de Fisioterapia Kindhara Cancun",
+  "start_url": "https://lcytadrianno1.github.io/KindharaCancunOficial.github.io/",
+  "display": "fullscreen",
+  "scope": "/",
   "background_color": "#ffffff",
   "theme_color": "#007bff",
   "icons": [
@@ -17,6 +18,16 @@
       "sizes": "512x512",
       "type": "image/jpeg",
       "purpose": "maskable"
+    },
+    {
+      "src": "KindharaX.jpg",
+      "sizes": "256x256",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "KindharaX.jpg",
+      "sizes": "384x384",
+      "type": "image/jpeg"
     }
   ]
 }
