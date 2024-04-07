@@ -24,6 +24,10 @@
       <link rel ="stylesheet" href="CSS/BotonesFlotantes.css">
       <!-- Añadir Font Awesome -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Añadir animaciones de movimiento -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+      <!-- Añadir animaciones de movimiento en el scroll de AOS-->
+      <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    </head>
@@ -68,7 +72,7 @@
       <div class="container-fluid p-0">
          <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
             <a href="index.html" class="navbar-brand ml-lg-3">
-               <img src="Recursos/Kindhara.svg" alt="Kindhara" class="logo" style="width: 100px; height: 57px;"> <!-- Logo -->
+            <img src="Recursos/Kindhara.svg" alt="Kindhara" class="logo animate__animated animate__slideInLeft" style="width: 100px; height: 57px;">
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -138,7 +142,7 @@
          <div class="container py-5">
             <div class="row align-items-center">
                <div class="col-lg-6 pb-5 pb-lg-0">
-                  <img class="img-fluid w-100" src="https://www.clinicacolumbia.com/wp-content/uploads/2023/06/diferencia-entre-fisioterapia-y-rehabilitacion.jpg" alt="">
+                  <img class="img-fluid w-100 aos-init aos-animate" data-aos="zoom-in" src="https://www.clinicacolumbia.com/wp-content/uploads/2023/06/diferencia-entre-fisioterapia-y-rehabilitacion.jpg" alt="">
                </div>
                <div class="col-lg-6">
                   <h1 class="mb-4">La mejor manera de aliviar el dolor</h1>
@@ -153,7 +157,12 @@
       </div>
       <!-- Sobre Nosotros Final -->
       <!-- Preguntas Frecuentes Inicio -->
-      <div class="jumbotron jumbotron-fluid bg-jumbotron" style="background-image: url('https://img.freepik.com/foto-gratis/fondo-patron-hojas-palma-tropical-diseno-decoracion-follaje-arbol-monstera-verde-planta-primer-plano-hoja-exotica_90220-1135.jpg'); background-size: cover; background-repeat: no-repeat; margin-bottom: 90px;">
+      <div class="jumbotron jumbotron-fluid bg-jumbotron" 
+         style="background-image: url('https://img.freepik.com/foto-gratis/fondo-patron-hojas-palma-tropical-diseno-decoracion-follaje-arbol-monstera-verde-planta-primer-plano-hoja-exotica_90220-1135.jpg'); 
+         background-size: cover; 
+         background-repeat: no-repeat; 
+         margin-bottom: 90px;"
+         data-aos="fade-up">
          <div class="container text-center py-5">
             <h3 class="text-white display-3 mb-4">
                Preguntas Frecuentes
@@ -181,7 +190,7 @@
                   <button id="installButton">Sobre nosotros</button>
                </div>
                <div class="col-lg-6 pb-5 pb-lg-0">
-                  <img class="img-fluid w-100" src="https://www.clinicacolumbia.com/wp-content/uploads/2023/06/diferencia-entre-fisioterapia-y-rehabilitacion.jpg" alt="">
+                  <img class="img-fluid w-100 aos-init aos-animate" data-aos="zoom-in" src="https://www.clinicacolumbia.com/wp-content/uploads/2023/06/diferencia-entre-fisioterapia-y-rehabilitacion.jpg" alt="">
                </div>
             </div>
          </div>
@@ -192,7 +201,7 @@
          <div class="container py-5">
             <div class="row align-items-center">
                <div class="col-lg-6 pb-5 pb-lg-0">
-                  <img class="img-fluid w-100" src="https://www.clinicacolumbia.com/wp-content/uploads/2023/06/diferencia-entre-fisioterapia-y-rehabilitacion.jpg" alt="">
+                  <img class="img-fluid w-100 aos-init aos-animate" data-aos="zoom-in" src="https://www.clinicacolumbia.com/wp-content/uploads/2023/06/diferencia-entre-fisioterapia-y-rehabilitacion.jpg" alt="">
                </div>
                <div class="col-lg-6">
                   <h1 class="mb-4">Cosmetología</h1>
@@ -217,7 +226,10 @@
          <i class="fa fa-whatsapp" aria-hidden="true"></i>
          </button>
       </div>
-      <button id="installButton">Instalar App</button>
+      <!--
+         <button id="installButton">Instalar App</button>
+         
+         -->
       <!-- Inicio Footer -->
       <footer class="bg-dark text-white py-4">
          <div class="container">
@@ -249,5 +261,6 @@
       <script src="JS/InstalacionMovil.js"></script>
       <script src="JS/CapturaErrores.js"></script>
       <script src="JS/InstalacionPC.js"></script>
+      <script src="JS/AOS.js"></script>
    </body>
 </html>
