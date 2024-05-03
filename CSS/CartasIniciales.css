@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-cartas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.carta {
+    width: 300px;
+    border: 1px solid #f1e5e9;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(73, 73, 73, 0.1);
+}
+
+.carta img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contenido {
+    text-align: center;
+}
+
+.calificacion {
+    color: gold;
+    font-size: 0;
+}
+
+
+.estrella {
+    margin: 0 2px;
+    font-size: 16px; /* Tamaño inicial de la estrella */
+    transition: font-size 0.5s ease; /* Transición para el cambio de tamaño */
+}
