@@ -164,6 +164,22 @@
          <button id="modoBoton" class="btn btn-primary btn-rounded" onclick="cambiarModo()">☀️</button>
       </div>
       <!-- Botones Flotantes Final -->
+      <audio id="myAudio" autoplay loop>
+         <source src="../Recursos/Sonido.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+      </audio>
+      <script>
+         var audio = document.getElementById("myAudio");
+         
+         // Espera a que el audio esté cargado antes de configurar el tiempo de inicio
+         audio.addEventListener("canplaythrough", function() {
+           // Agrega un retardo antes de establecer el tiempo de inicio
+           setTimeout(function() {
+             audio.currentTime = 3;
+             audio.currentTime = 4;
+           }, 400); // Retardo de 1 segundo
+         });
+      </script>
       <!-- Inicio Footer -->
       <footer class="bg-dark text-white py-4">
          <div class="container">
@@ -188,11 +204,6 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-      <script src="/JS/BotonPresionado.js"></script>
-      <script src="../JS/BotonInstalar.js"></script>
-      <script src="../JS/InstalacionMovil.js"></script>
-      <script src="../JS/CapturaErrores.js"></script>
-      <script src="../JS/InstalacionPC.js"></script>
       <script src="../JS/AOS.js"></script>
       <script src="../JS/CambiarColor.js"></script>
    </body>
