@@ -1,11 +1,1 @@
-/* Estilos para el modo claro */
-.modo-claro {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-/* Estilos para el modo oscuro */
-.modo-oscuro {
-    background-color: #000000;
-    color: #ffffff;
-}
+.modo-claro{background-color:#fff;color:#000}.modo-oscuro{background-color:#000;color:#fff}
